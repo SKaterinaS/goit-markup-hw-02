@@ -1,0 +1,65 @@
+/* основной цвет текста/SLATE /#434455/ */
+/* вторичный цвет текста//NAVY BLUE/#2E2F42;*/
+/* белый WHITE color: #FFFFFF;*/
+/* Accent Синий IRIS color: #4D5AE5;*/
+/* футер CLOUD color: #F4F4FD; */
+/* основной фон background: #E5E5E5; */
+/* вторичный фон NAVY BLUEbackground #2E2F42*/
+
+:root {
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --accent-text-color: #4d5ae5;
+  --primary-bg-color: #e5e5e5;
+}
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+/* Site-nav */
+.logo {
+  color: var(--accent-text-color);
+}
+.logo-part {
+  color: var(--title-text-color);
+}
+.logo:hover {
+  color: var(--accent-text-color);
+}
+.logo-part:hover {
+  color: var(--title-text-color);
+}
+.list {
+  list-style: none;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #404bbf;
+}
+/* Hero */
+.hero-title {
+  color: #ffffff;
+}
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+}
+.section-text {
+  color: var(--primary-text-color);
+}
+/* Button */
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
+.button.primary {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+.button.secondary {
+  color: var(--accent-text-color);
+  background-color: #f4f4fd;
+}
