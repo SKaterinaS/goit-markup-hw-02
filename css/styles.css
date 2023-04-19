@@ -7,14 +7,24 @@
 /* вторичный фон NAVY BLUEbackground #2E2F42*/
 
 :root {
+  /* Fonts */
+  --primary-font: Roboto; sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  /* Colors */
   --primary-text-color: #434455;
   --title-text-color: #2e2f42;
   --accent-text-color: #4d5ae5;
+  --hover-text-color: #404bbf;
   --primary-bg-color: #e5e5e5;
+  --cloud-text-color: #f4f4fd;
+  --secondary-bg-color: #2e2f42;
+  --section-bg-color: #ffffff;
 }
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
+  font-family: var(--primary-font);
+  font-style: normal;
 }
 /* Site-nav */
 .logo {
@@ -29,6 +39,12 @@ body {
 .logo-part:hover {
   color: var(--title-text-color);
 }
+.logo-part-light {
+  color: #ffffff;
+}
+.logo-part-white:hover {
+  color: var(--title-text-color);
+}
 .list {
   list-style: none;
 }
@@ -37,13 +53,31 @@ body {
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #404bbf;
+  color: var(--hover-text-color);
+}
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+/* Address */
+.contacs {
+  color: var(--primary-text-color);
+}
+.contacs:hover,
+.contacs:focus {
+  color: var(--hover-text-color);
 }
 /* Hero */
 .hero-title {
   color: #ffffff;
 }
 /* Section */
+.section {
+  background-color: var(--section-bg-color);
+}
+.section-secondary {
+  background-color: var(--secondary-bg-color);
+}
 .section-title {
   color: var(--title-text-color);
 }
@@ -57,9 +91,13 @@ body {
 }
 .button.primary {
   color: #ffffff;
-  background-color: #404bbf;
+  background-color: var(--hover-text-color);
 }
 .button.secondary {
   color: var(--accent-text-color);
   background-color: #f4f4fd;
+}
+/* Footer */
+.footer-text {
+  color: var(--cloud-text-color);
 }
