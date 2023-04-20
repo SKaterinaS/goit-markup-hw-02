@@ -8,7 +8,7 @@
 
 :root {
   /* Fonts */
-  --primary-font: Roboto; sans-serif;
+  --primary-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
   /* Colors */
   --primary-text-color: #434455;
@@ -24,34 +24,34 @@ body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: var(--primary-font);
-  line-height: 1,50;
-  letter-spacing: 2%
+  line-height: 1, 50;
+  letter-spacing: 2%;
 }
 /* Title1 */
 .hero-title {
-font-style: Bold;
-font-size: 56px;
-line-height: 1,07;
-text-align: Center;
-letter-spacing: 2%;
-color: #ffffff;
+  font-style: Bold;
+  font-size: 56px;
+  line-height: 1, 07;
+  text-align: Center;
+  letter-spacing: 2%;
+  color: #ffffff;
 }
 /* Title2 */
 .title {
-font-style: Bold;
-font-size: 36px;
-line-height: 1,11;
-text-align: Center;
-letter-spacing: 2%;
-color: var(--title-text-color);
+  font-style: Bold;
+  font-size: 36px;
+  line-height: 1, 11;
+  text-align: Center;
+  letter-spacing: 2%;
+  color: var(--title-text-color);
 }
 /* Title3 */
 .section-title {
-font-style: Medium;
-Font-size: 20px;
-line-height: 1,2;
-letter-spacing: 2%;
-color: var(--title-text-color);
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 1, 2;
+  letter-spacing: 2%;
+  color: var(--title-text-color);
 }
 /* Site-nav */
 .logo {
@@ -76,10 +76,10 @@ color: var(--title-text-color);
   list-style: none;
 }
 .site-nav .link {
-font-style: Medium;
-line-height: 1,50;
-letter-spacing: 2%;
-color: var(--title-text-color);
+  font-style: Medium;
+  line-height: 1, 50;
+  letter-spacing: 2%;
+  color: var(--title-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
