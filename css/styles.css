@@ -19,43 +19,59 @@
   --cloud-text-color: #f4f4fd;
   --secondary-bg-color: #2e2f42;
   --section-bg-color: #ffffff;
+  --cloud-bg-color: #f4f4fd;
 }
 body {
-  background-color: var(--primary-bg-color);
+  background-color: var(--section-bg-color);
   color: var(--primary-text-color);
   font-family: var(--primary-font);
-  line-height: 1, 50;
-  letter-spacing: 2%;
+  line-height: 1.5;
+  font-style: normal;
+  letter-spacing: 0.02em;
 }
 /* Title1 */
 .hero-title {
   font-style: Bold;
   font-size: 56px;
-  line-height: 1, 07;
-  text-align: Center;
-  letter-spacing: 2%;
+  line-height: 1.07;
+  text-align: center;
   color: #ffffff;
+  letter-spacing: 0.02em;
 }
 /* Title2 */
 .title {
-  font-style: Bold;
-  font-size: 36px;
-  line-height: 1, 11;
-  text-align: Center;
-  letter-spacing: 2%;
+  line-height: 1.11;
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 /* Title3 */
 .section-title {
-  font-style: Medium;
   font-size: 20px;
-  line-height: 1, 2;
-  letter-spacing: 2%;
+  line-height: 1.2;
   color: var(--title-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+/* Text */
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 /* Site-nav */
 .logo {
   color: var(--accent-text-color);
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .logo-part {
   color: var(--title-text-color);
@@ -67,7 +83,7 @@ body {
   color: var(--title-text-color);
 }
 .logo-part-light {
-  color: #ffffff;
+  color: #f4f4fd;
 }
 .logo-part-light:hover {
   color: var(--title-text-color);
@@ -75,11 +91,16 @@ body {
 .list {
   list-style: none;
 }
+.list-item {
+  background-color: var(--section-bg-color);
+}
 .site-nav .link {
-  font-style: Medium;
-  line-height: 1, 50;
-  letter-spacing: 2%;
+  line-height: 1.5;
   color: var(--title-text-color);
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -97,9 +118,16 @@ body {
 .contacs:focus {
   color: var(--hover-text-color);
 }
+/* Hero */
+.hero {
+  background-color: var(--secondary-bg-color);
+}
 /* Section */
 .section {
   background-color: var(--section-bg-color);
+}
+.section-accent {
+  background-color: var(--cloud-bg-color);
 }
 .section-secondary {
   background-color: var(--secondary-bg-color);
@@ -109,12 +137,21 @@ body {
 .button {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
-  font-family: inherit;
   cursor: pointer;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 .button.primary {
   color: #ffffff;
   background-color: var(--hover-text-color);
+}
+.button.primary:hover,
+.button.primary:focus {
+  background-color: #404bbf;
 }
 .button.secondary {
   color: var(--accent-text-color);
@@ -123,4 +160,7 @@ body {
 /* Footer */
 .footer-text {
   color: var(--cloud-text-color);
+}
+.footer-bg {
+  background-color: var(--secondary-bg-color);
 }
