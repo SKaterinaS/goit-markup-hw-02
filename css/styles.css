@@ -20,6 +20,7 @@
   --secondary-bg-color: #2e2f42;
   --section-bg-color: #ffffff;
   --cloud-bg-color: #f4f4fd;
+  --accent-bg-color: #4d5ae5;
 }
 body {
   background-color: var(--section-bg-color);
@@ -111,6 +112,9 @@ body {
   font-style: normal;
 }
 /* Address */
+.address {
+  font-style: normal;
+}
 .contacs {
   color: var(--primary-text-color);
 }
@@ -147,7 +151,7 @@ body {
 }
 .button.primary {
   color: #ffffff;
-  background-color: var(--hover-text-color);
+  background-color: var(--accent-bg-color);
 }
 .button.primary:hover,
 .button.primary:focus {
