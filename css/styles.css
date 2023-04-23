@@ -63,6 +63,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  font-family: var(--primary-font);
 }
 /* Site-nav */
 .logo {
@@ -159,7 +160,12 @@ body {
 }
 .button.secondary {
   color: var(--accent-text-color);
-  background-color: #f4f4fd;
+  background-color: var(--cloud-bg-color);
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  color: #ffffff;
+  background-color: #404bbf;
 }
 /* Footer */
 .footer-text {
