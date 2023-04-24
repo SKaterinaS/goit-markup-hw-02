@@ -15,29 +15,30 @@
   --title-text-color: #2e2f42;
   --accent-text-color: #4d5ae5;
   --hover-text-color: #404bbf;
-  --primary-bg-color: #e5e5e5;
   --cloud-text-color: #f4f4fd;
+  --white-text-color: #ffffff;
+  --primary-bg-color: #e5e5e5;
   --secondary-bg-color: #2e2f42;
   --section-bg-color: #ffffff;
   --cloud-bg-color: #f4f4fd;
   --accent-bg-color: #4d5ae5;
+  --hover-bg-color: #404bbf;
 }
 body {
   background-color: var(--section-bg-color);
   color: var(--primary-text-color);
   font-family: var(--primary-font);
   line-height: 1.5;
-  font-style: normal;
   letter-spacing: 0.02em;
 }
 /* Title1 */
 .hero-title {
-  font-style: Bold;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  color: #ffffff;
+  color: var(--white-text-color);
   letter-spacing: 0.02em;
+  font-weight: 700;
 }
 /* Title2 */
 .title {
@@ -78,17 +79,8 @@ body {
 .logo-part {
   color: var(--title-text-color);
 }
-.logo:hover {
-  color: var(--accent-text-color);
-}
-.logo-part:hover {
-  color: var(--title-text-color);
-}
 .logo-part-light {
-  color: #f4f4fd;
-}
-.logo-part-light:hover {
-  color: var(--title-text-color);
+  color: var(--cloud-text-color);
 }
 .list {
   list-style: none;
@@ -110,7 +102,6 @@ body {
 }
 .link {
   text-decoration: none;
-  font-style: normal;
 }
 /* Address */
 .address {
@@ -144,19 +135,18 @@ body {
   background-color: var(--primary-bg-color);
   cursor: pointer;
   font-family: var(--primary-font);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
 .button.primary {
-  color: #ffffff;
+  color: var(--white-text-color);
   background-color: var(--accent-bg-color);
 }
 .button.primary:hover,
 .button.primary:focus {
-  background-color: #404bbf;
+  background-color: var(--hover-bg-color);
 }
 .button.secondary {
   color: var(--accent-text-color);
@@ -164,8 +154,8 @@ body {
 }
 .button.secondary:hover,
 .button.secondary:focus {
-  color: #ffffff;
-  background-color: #404bbf;
+  color: var(--white-text-color);
+  background-color: var(--hover-bg-color);
 }
 /* Footer */
 .footer-text {
